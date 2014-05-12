@@ -15,14 +15,14 @@
  */
 
 body {
-  background: #DDD;
+  background: #0F106A;
   font-family: Verdana;
   font-size: 13px;
   line-height: 18px;
-
+  color:white;
 }
 
-#body, #side_body {
+#body, #side_body ,#side{
   float: left;
   width: 45%;
   background: white;
@@ -30,6 +30,13 @@ body {
   padding: 20px;
 }
 
+
+/*Titulo de pagina*/
+#body_content_title {
+  color:white;
+  font-size: 500%;
+
+}
 
 
 
@@ -44,17 +51,23 @@ body {
   }
 
 .clearfix ul {
-  background: #efefef; 
-  background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
-  background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
-  background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+  background: #FFA314; 
+  /*
+  background: linear-gradient(top, #F17B21 0%, #bbbbbb 100%);  
+  background: -moz-linear-gradient(top, #F17B21 0%, #bbbbbb 100%); 
+  background: -webkit-linear-gradient(top, #F17B21 0%,#bbbbbb 100%); 
+*/
   box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+
   padding: 0 20px;
   border-radius: 10px;  
   list-style: none;
   position: relative;
   display: inline-table;
+
 }
+
+
   .clearfix ul:after {
     content: ""; clear: both; display: block;
   }
@@ -63,10 +76,14 @@ body {
   float: left;
 }
   .clearfix ul li:hover {
-    background: #4b545f;
-    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-    background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+    background: #0F106A;
+    
+    /*
+    background: linear-gradient(top, #0F106A 0%, #5f6975 90%);
+    background: -moz-linear-gradient(top, #0F106A 0%, #5f6975 90%);
+    background: -webkit-linear-gradient(top, #0F106A 0%,#5f6975 90%);
+*/    
+
   }
     .clearfix ul li:hover a {
       color: #fff;
@@ -74,11 +91,11 @@ body {
   
   .clearfix ul li a {
     display: block; padding: 25px 40px;
-    color: #757575; text-decoration: none;
+    color: #0F106A; text-decoration: none; font-size: large;
   }
 
   .clearfix ul ul {
-  background: #5f6975; border-radius: 0px; padding: 0;
+  background: #0F106A; border-radius: 0px; padding: 0;
   position: absolute; top: 100%;
 }
   .clearfix ul ul li {
@@ -92,9 +109,35 @@ body {
       color: #fff;
     } 
       .clearfix ul ul li a:hover {
-        background: #4b545f;
+        background:  #FFA314; 
+        color:#0F106A;
       }
 
   .clearfix ul ul ul {
   position: absolute; left: 100%; top:0;
+}
+
+/*The Banner*/
+
+#banner {
+  background-color: #852A2C;
+  padding: 20px 100px;
+  font-weight: normal;
+  font-style: italic;
+  color: #FFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A03133), to(#722324));
+  background: -moz-linear-gradient(top,  #A03133, #722324);
+  -moz-box-shadow: 0 2px 8px 2px #000;
+  -webkit-box-shadow: 0 2px 6px 2px #000;
+  margin-bottom: 30px;
+  p {
+    margin: 0;
+    padding-top: 32px;
+    font-size: 34px;
+    &.font-size-small {
+      padding-top: 10px;
+      font-size: 20px;
+      color: #EAA29F;
+    }
+  }
 }
